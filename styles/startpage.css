@@ -1,0 +1,107 @@
+
+html, body {
+  background-color: #0d1b2a;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+#clock-date {
+    position: relative;
+    top: 5%;
+
+}
+#clock{
+    font-family: NovaMono, Verdana;
+    font-size: 80px;
+    color: #2161c6!important;
+    line-height: 85px;*/
+    display: block;
+    margin-top: -.06em;
+    text-align: center;
+    letter-spacing: .05em;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.3)!important;
+}
+.SearchSpan{
+
+    display: inline;
+}
+#Search{
+    position: relative;
+    margin: 0 auto;
+    height: 50px;
+    width: 50%;
+    top: 15%;
+    display: flex;
+    white-space: nowrap;
+}
+#SearchField {
+    width: 80%;
+    height: 50px;
+}
+#btn-main {
+    width: 20%;
+}
+#search-btn-dropdown , #search-btn{
+    background: #FFFFFF;
+}
+
+
+#links{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+    width: 50%;
+    text-align: center!important;
+}
+
+#columnOne , #columnTwo , #columnThree{
+}
+
+.bin-clock {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+.digit {
+    display: table-cell;
+    vertical-align: bottom;
+    float: left;
+}
+
+.LedLit {
+    background: #2161c6!important;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.3)!important;
+
+}
+
+.digit-1 , .digit-3 , .digit-5{
+    float: left;
+
+}
+.digit-2 , .digit-4 , .digit-6{
+    float: left;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+.led {
+    background: rgba(211, 211, 211, 0.4);
+    width: 3em;
+    height: 3em;
+    margin: 4px 2px 2px 0px;
+    border-radius: 1em;
+}
+#sidebar-calendar{
+    height: 100%;
+    overflow: scroll;
+    background: transparent!important;
+}

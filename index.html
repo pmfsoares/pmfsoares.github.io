@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="styles/startpage.css">
+        <script src="scripts/libs/jquery-3.3.1.min.js"></script>
+        <script src="scripts/libs/bootstrap.bundle.js"></script>
+        <script src="scripts/searchbar.js"></script>
+        <script async defer src="https://apis.google.com/js/api.js"></script>
+        <script src="scripts/calendar.js"></script>
+        <!-- <script src="scripts/libs/js.cookie.js"></script> -->
+    </head>
+    <body>
+        <div class="modal" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Google AuthSignIn</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Click Sign In to authorize google api sign in and get the calendar data</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="auth-modal-signin" onclick="handleAuthClick()" data-dismiss="modal">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height:100%;">
+            <div class="col" id="main-col">
+                <div class="text-center" id="clock-date"> 
+                </div>
+                <div class="centered input-group" id="Search">
+                    <input type="text" class="form-control" id="SearchField" placeholder="Search...">
+                    <div class="input-group-append" id="btn-main">
+                        <button type="button" onclick="newSearch()" class="btn btn-outline-secondary" id="search-btn"></button>
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" id="search-btn-dropdown" data-toggle="dropdown">
+                        </button>
+                        <div class="dropdown-menu" id="engine-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="links">
+                    <div class="links-column col" id="column1">
+                    </div>
+                    <div class="links-column col" id="column2">
+                    </div>
+                    <div class="links-column col" id="column3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm4" style="height: 100%;" id="sidebar-col">
+            <div class="float-right" id="sidebar-calendar">
+                    <ul class="list-group" id="calendar"></ul> 
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
