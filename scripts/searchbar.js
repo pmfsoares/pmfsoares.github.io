@@ -19,7 +19,7 @@ links1 =[
     { name:"google", url:"https://www.google.com"},
 ];
 links2 =[
-    {name: "Tweetdeck", url:"https://www.tweetdeck.com"}
+    {name: "Tweetdeck", url:"https://www.tweetdeck.com"},
     {name: "Youtube", url:"https://www.youtube.com/subscription"},
     {name: "Instagram", url:"https://www.instagram.com"},
 
