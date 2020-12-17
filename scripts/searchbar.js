@@ -19,13 +19,14 @@ links1 =[
     { name:"google", url:"https://www.google.com"},
 ];
 links2 =[
-    {name: "g", url:"https://www.4chan.org/g/catalog"},
-    {name: "wg", url:"https://www.4chan.org/wg/catalog"},
-    {name: "w", url:"https://www.4chan.org/w/catalog"}
+    {name: "Tweetdeck", url:"https://www.tweetdeck.com"}
+    {name: "Youtube", url:"https://www.youtube.com/subscription"},
+    {name: "Instagram", url:"https://www.instagram.com"},
+
 ];
 links3 =[
-    { name:"reddit", url:"https://www.reddit.com"},
-    { name:"google", url:"https://www.google.com"},
+    { name:"Gmail", url:"https://www.gmail.com"},
+    { name:"Keep", url:"https://keep.google.com"},
 ];
 //Update clock every 1/2 sec.
 function startTime() {
